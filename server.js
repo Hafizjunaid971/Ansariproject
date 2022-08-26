@@ -12,7 +12,7 @@ const path = require('path')
 app.get("*", (req, res) => {
     res.sendFile(path.resolve(__dirname, "client/build/index.html"));
   });
-app.get('*', (req, res) => {
-    res.send('hello world');
-});
+// app.get('*', (req, res) => {
+//     res.send('hello world');
+// });
 app.listen(port, () => console.log(`listening on http://localhost:${port}`));
